@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLiftMonoApp", "GameLiftMonoApp\GameLiftMonoApp.csproj", "{8D466A7E-80CB-452E-8F66-1AF3602F5E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLiftServerSDKNet45", "GameLift-CSharp-ServerSDK-4.0.0\Net45\GameLiftServerSDKNet45.csproj", "{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D466A7E-80CB-452E-8F66-1AF3602F5E2F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{8D466A7E-80CB-452E-8F66-1AF3602F5E2F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{8D466A7E-80CB-452E-8F66-1AF3602F5E2F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{8D466A7E-80CB-452E-8F66-1AF3602F5E2F}.Release|anycpu.Build.0 = Release|anycpu
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
