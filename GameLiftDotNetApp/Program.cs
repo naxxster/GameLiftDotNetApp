@@ -3,19 +3,12 @@ using System.Threading;
 using System.Collections.Generic;
 using Aws.GameLift.Server;
 
-namespace GameLiftMonoApp
-{
-    class MainClass
-    {
-        enum ExitCode : int
-        {
-            Success = 0,
-            InvalidLogin = 1,
-            InvalidFilename = 2,
-            UnknownError = 10
-        }
 
-        public static int Main()
+namespace GameLiftDotNetApp
+{
+    class Program
+    {
+        static int Main(string[] args)
         {
             var listeningPort = 7777;
             var waitHandle = new AutoResetEvent(false);
@@ -77,16 +70,16 @@ namespace GameLiftMonoApp
             }
 
             Console.CancelKeyPress += new ConsoleCancelEventHandler(
-                (object sender, ConsoleCancelEventArgs args) =>
+                (object sender, ConsoleCancelEventArgs eventArgs) =>
                 {
                     Console.WriteLine("The read operation has been interrupted.");
-                    Console.WriteLine($"  Key pressed: {args.SpecialKey}");
-                    Console.WriteLine($"  Cancel property: {args.Cancel}");
+                    Console.WriteLine($"  Key pressed: {eventArgs.SpecialKey}");
+                    Console.WriteLine($"  Cancel property: {eventArgs.Cancel}");
 
                     Console.WriteLine("Setting the Cancel property to true...");
-                    args.Cancel = true;
+                    eventArgs.Cancel = true;
 
-                    Console.WriteLine($"  Cancel property: {args.Cancel}");
+                    Console.WriteLine($"  Cancel property: {eventArgs.Cancel}");
                     Console.WriteLine("The read operation will resume...");
                     waitHandle.Set();
                 }
@@ -106,7 +99,7 @@ namespace GameLiftMonoApp
 
             GameLiftServerAPI.Destroy();
 
-            return (int)ExitCode.Success;
+            return 0;
         }
     }
 }

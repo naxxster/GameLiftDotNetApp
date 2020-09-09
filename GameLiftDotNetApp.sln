@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLiftServerSDKNet45", "GameLift-CSharp-ServerSDK-4.0.0\Net45\GameLiftServerSDKNet45.csproj", "{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLiftDotNetApp", "GameLiftDotNetApp\GameLiftDotNetApp.csproj", "{AA1A3739-9639-41AA-8DF6-5A7BEB7367AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{B6A23723-FA7F-46DF-8837-1FE06E1AABD9}.Release|anycpu.Build.0 = Release|Any CPU
+		{AA1A3739-9639-41AA-8DF6-5A7BEB7367AE}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{AA1A3739-9639-41AA-8DF6-5A7BEB7367AE}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{AA1A3739-9639-41AA-8DF6-5A7BEB7367AE}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{AA1A3739-9639-41AA-8DF6-5A7BEB7367AE}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8C7CA4D-D410-46DE-B546-D4278C334FC4}
+	EndGlobalSection
+EndGlobal
